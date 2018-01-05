@@ -9,4 +9,30 @@ public class HelloWorldController {
     public String index() {
         return "Hello World";
     }
+
+    @RequestMapping("/fooBar")
+    public FooBar fooBar() {
+        return new FooBar();
+    }
+
+    class FooBar {
+        private int id;
+        private String name;
+
+        public int getId() {
+            return id;
+        }
+
+        public void setId(int id) {
+            this.id = id;
+        }
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
+    }
 }
