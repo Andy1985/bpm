@@ -1,0 +1,1 @@
+基于activiti流程引擎实现一套通用的bpm系统，服务端使用springboot，前端使用react。
